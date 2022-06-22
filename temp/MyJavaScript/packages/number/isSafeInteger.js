@@ -1,0 +1,1 @@
+export const isSafeInteger = v => Number.isSafeInteger(v)

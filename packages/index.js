@@ -1,11 +1,3 @@
-export * from "./algorithm/_index";
-export * from "./array/_index";
-export * from "./boolean/_index";
-export * from "./date/_index";
-export * from "./dom/_index";
-export * from "./function/_index";
-export * from "./mobile/_index";
-export * from "./number/_index";
-export * from "./object/_index";
-export * from "./regexp/_index";
-export * from "./string/_index";
+console.log(require)
+const files = require.context('./', true, /\.js$/)
+console.log(files)

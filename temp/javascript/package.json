@@ -1,0 +1,42 @@
+{
+  "name": "@langnang/javascript",
+  "version": "alpha-0.0.1",
+  "description": "",
+  "main": "dist.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js && npm run docs",
+    "watch": "rollup --config rollup.config.js -w",
+    "test:w": "jest --watchAll",
+    "test:c": "jest --coverage",
+    "docs": "typedoc --options typedoc.config.js",
+    "docs:w": "typedoc --options typedoc.config.js --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/activex-excel": "^14.0.6",
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5",
+    "jsdoc": "^3.6.7",
+    "require-context": "^1.1.0",
+    "rollup": "^2.62.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "ts-jest": "^27.1.2",
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-merge-modules": "^3.1.0",
+    "typedoc-plugin-mermaid": "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/javascript.git"
+  },
+  "keywords": [],
+  "author": "Langnang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/javascript/issues"
+  },
+  "homepage": "https://github.com/langnang/javascript#readme",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  }
+}

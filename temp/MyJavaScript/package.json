@@ -1,0 +1,50 @@
+{
+  "name": "@langnang/js",
+  "description": "",
+  "homepage": "https://github.com/langnang/MyJavaScript#readme",
+  "version": "0.1.0",
+  "main": "lib/ln.cjs.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "docs:watch": "rollup --config rollup.config.docs.js -w",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "dev:test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2",
+    "rollup": "^2.26.11"
+  },
+  "jest": {
+    "testRegex": "/test/.*.test.jsx?$"
+  },
+  "author": "langnang",
+  "license": "ISC",
+  "directories": {},
+  "keywords": [
+    "langnang",
+    "javascript",
+    "js",
+    "function",
+    "util"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/MyJavaScript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/langnang/MyJavaScript/issues"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/typescript@3.1.53"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
+  }
+}

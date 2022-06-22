@@ -1,4 +1,5 @@
 import config from './package.json';
+import path from 'path'
 
 const OUTPUT_BANNER = `
 /*!
@@ -14,23 +15,23 @@ export default {
     ...[
       //dist
       {
-        file: './lib/ln.js',
+        file: './dist/ln.js',
         name: 'ln',
         format: 'umd',
         banner: OUTPUT_BANNER,
       },
       {
-        file: './lib/ln.amd.js',
+        file: './dist/ln.amd.js',
         format: 'amd',
         banner: OUTPUT_BANNER,
       },
       {
-        file: './lib/ln.cjs.js',
+        file: './dist/ln.cjs.js',
         format: 'cjs',
         banner: OUTPUT_BANNER,
       },
       {
-        file: './lib/ln.es.js',
+        file: './dist/ln.es.js',
         format: 'es',
         banner: OUTPUT_BANNER,
       },
