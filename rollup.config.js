@@ -1,5 +1,4 @@
 import config from './package.json';
-import path from 'path'
 
 const OUTPUT_BANNER = `
 /*!
@@ -9,7 +8,7 @@ const OUTPUT_BANNER = `
 `;
 
 export default {
-  input: './packages/index.js',
+  input: './packages',
   // input: './index.ts',
   output: [
     ...[
