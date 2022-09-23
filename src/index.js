@@ -26,6 +26,9 @@ export * from "./array/array_pop";
 export * from "./array/array_push";
 export * from "./array/array_unique";
 export * from "./array/sudoku";
+// boolean
+export * from "./boolean/is_false";
+export * from "./boolean/is_true";
 // math
 export * from "./math/random";
 // string

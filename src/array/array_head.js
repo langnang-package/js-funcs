@@ -4,7 +4,7 @@
  * @param {Array} arr
  */
 import { arraySlice } from "./arraySlice";
-export const head = (array, n = 1, mode = "prototype") => {
+export const array_head = (array, n = 1, mode = "prototype") => {
   if (n == 1) return array[0];
 
   let _map = new Map();
