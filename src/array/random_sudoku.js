@@ -1,8 +1,8 @@
 import { random } from "../math/random";
 /**
- * 生成九宫格数独
+ * 生成随机九宫格数独
  */
-export const sudoku = () => {
+export const random_sudoku = () => {
   let result = [];
   for (let i = 0; i < 9; i++) {
     let row = [1, 2, 3, 4, 5, 6, 7, 8, 9];

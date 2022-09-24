@@ -4,7 +4,7 @@
  */
 
 import { typeOf } from "./typeOf";
-export const isDOM = (object) =>
+export const is_dom = (object) =>
   typeOf(HTMLElement) === "object"
     ? object instanceof HTMLElement
     : object &&

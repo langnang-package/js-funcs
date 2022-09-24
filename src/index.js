@@ -25,12 +25,14 @@ export * from "./array/array_join";
 export * from "./array/array_pop";
 export * from "./array/array_push";
 export * from "./array/array_unique";
-export * from "./array/sudoku";
+export * from "./array/random_sudoku";
 // boolean
 export * from "./boolean/is_false";
 export * from "./boolean/is_true";
 // math
 export * from "./math/random";
+// object
+export * from "./object/object_type";
 // string
 export * from "./string/uuid";
 // other
