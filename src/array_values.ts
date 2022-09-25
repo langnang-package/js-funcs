@@ -1,8 +1,8 @@
-import { arrayPush } from "./arrayPush";
+import { array_push } from "./array_push";
 export const array_values = (array) => {
   let res = [];
   for (let key in array) {
-    arrayPush(res, array[key]);
+    array_push(res, array[key]);
   }
   return res;
 };

@@ -4,11 +4,11 @@
  * @param {Array} arr
  */
 
-import { isArray } from "../../temp/packages/object/isArray";
+import { is_array } from "./is_array";
 export const flatten = (arr, depth = 1) => {
   if (depth >= 1) {
     return arr.reduce(
-      (a, v) => a.concat(isArray(v) ? flatten(v, depth - 1) : v),
+      (a, v) => a.concat(is_array(v) ? flatten(v, depth - 1) : v),
       []
     );
   }
@@ -16,6 +16,6 @@ export const flatten = (arr, depth = 1) => {
     return arr;
   }
   if (depth === -1) {
-    return arr.reduce((a, v) => a.concat(isArray(v) ? flatten(v, -1) : v), []);
+    return arr.reduce((a, v) => a.concat(is_array(v) ? flatten(v, -1) : v), []);
   }
 };

@@ -1,4 +1,4 @@
-import { random } from "../math/random";
+import { random } from "./random";
 /**
  * 生成随机九宫格数独
  */

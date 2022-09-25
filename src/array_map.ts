@@ -1,8 +1,8 @@
-import { arrayPush } from "./arrayPush";
+import { array_push } from "./array_push";
 export const array_map = (array, callback, thisArg) => {
   let res = [];
   for (let key in array) {
-    arrayPush(res, callback(array[key], key, array));
+    array_push(res, callback(array[key], key, array));
   }
   return res;
 };

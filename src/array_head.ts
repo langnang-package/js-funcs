@@ -3,13 +3,13 @@
  * @description 数组的前n个元素
  * @param {Array} arr
  */
-import { arraySlice } from "./arraySlice";
-export const array_head = (array, n = 1, mode = "prototype") => {
+import { array_slice } from "./array_slice";
+export const array_head = (array: any[], n = 1, mode = "prototype") => {
   if (n == 1) return array[0];
 
   let _map = new Map();
   _map.set("prototype", (array, n) => array.slice(0, n));
-  _map.set("_prototype", (array, n) => arraySlice(array, 0, n));
+  _map.set("_prototype", (array, n) => array_slice(array, 0, n));
   _map.set("for", (array, n) => {
     let _head = [];
     for (let i = 0; i <= n - 1; i++) {

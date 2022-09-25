@@ -1,4 +1,4 @@
-export const array_every = (array, callback, thisArg) => {
+export const array_every = (array: any[], callback: Function, thisArg: any) => {
   let truth = true;
   for (let key in array) {
     truth = callback(array[key], key, array);

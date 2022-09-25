@@ -9,13 +9,22 @@
     "test": "jest",
     "test:watch": "jest --watchAll"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/activex-excel": "^14.0.6",
+    "@types/jest": "^27.4.0",
     "babel-jest": "^26.3.0",
-    "jest": "^26.4.2",
-    "rollup": "^2.26.11"
+    "jest": "^27.4.5",
+    "require-context": "^1.1.0",
+    "rollup": "^2.62.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "ts-jest": "^27.1.2"
   },
   "jest": {
     "testRegex": "/test/.*.test.jsx?$"
