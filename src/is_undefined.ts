@@ -5,5 +5,5 @@
  * @return {Boolean}
  */
 
-export const is_undefined = (object) =>
+export const is_undefined = (object: any) =>
   Object.prototype.toString.call(object) === "[object Undefined]";

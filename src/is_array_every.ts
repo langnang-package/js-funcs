@@ -4,4 +4,4 @@
  * @param {*} fn
  */
 
-export const is_array_every = (array, fn = Boolean) => array.every(fn);
+export const is_array_every = (array: any[], fn = Boolean) => array.every(fn);

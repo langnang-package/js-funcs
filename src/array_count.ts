@@ -4,5 +4,5 @@
  * @param {*} arr
  * @param {*} value
  */
-export const array_count = (array, val = array[0]) =>
+export const array_count = (array: any[], val: any = array[0]): any =>
   array.reduce((a, v) => (v === val ? a + 1 : a), 0);

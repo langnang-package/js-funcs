@@ -6,34 +6,34 @@
  * @param  array 待排序数组
  * @param  maxDigit 最大位数
  */
-export const radixSort = array => {
-    const maxDigit = (num, digit = 1) => {
-        if (num <= -10 || num >= 10) {
-            digit = maxDigit(num / 10, ++digit);
-        }
-        return digit;
+export const radix_sort = (array: any[]) => {
+  const maxDigit = (num: number, digit: number = 1) => {
+    if (num <= -10 || num >= 10) {
+      digit = maxDigit(num / 10, ++digit);
     }
-    let digit = maxDigit(Math.max(...array));
-    var mod = 10;
-    var dev = 1;
-    var counter = [];
-    for (var i = 0; i < digit; i++ , dev *= 10, mod *= 10) {
-        for (var j = 0; j < array.length; j++) {
-            var bucket = parseInt((array[j] % mod) / dev);
-            if (counter[bucket] == null) {
-                counter[bucket] = [];
-            }
-            counter[bucket].push(array[j]);
-        }
-        var pos = 0;
-        for (var j = 0; j < counter.length; j++) {
-            var value = null;
-            if (counter[j] != null) {
-                while ((value = counter[j].shift()) != null) {
-                    array[pos++] = value;
-                }
-            }
-        }
+    return digit;
+  }
+  let digit = maxDigit(Math.max(...array));
+  var mod = 10;
+  var dev = 1;
+  var counter = [];
+  for (var i = 0; i < digit; i++, dev *= 10, mod *= 10) {
+    for (var j = 0; j < array.length; j++) {
+      var bucket = Math.floor((array[j] % mod) / dev);
+      if (counter[bucket] == null) {
+        counter[bucket] = [];
+      }
+      counter[bucket].push(array[j]);
     }
-    return array;
+    var pos = 0;
+    for (var j = 0; j < counter.length; j++) {
+      var value = null;
+      if (counter[j] != null) {
+        while ((value = counter[j].shift()) != null) {
+          array[pos++] = value;
+        }
+      }
+    }
+  }
+  return array;
 }

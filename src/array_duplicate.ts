@@ -3,7 +3,7 @@
  * @param {*} arr
  */
 
-export const array_duplicate = (arr) => [
+export const array_duplicate = (arr: any[]): any[] => [
   ...new Set(
     arr.reduce(
       (acc, val, index) =>

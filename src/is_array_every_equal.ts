@@ -1,2 +1,2 @@
-export const is_array_every_equal = (array) =>
-  array.every((val) => val === arr[0]);
+export const is_array_every_equal = (array: any[]) =>
+  array.every((val) => val === array[0]);

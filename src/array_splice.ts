@@ -1,4 +1,4 @@
-export const arraySplice = (array, start = 0, deleteCount = 0, ...items) => {
+export const array_splice = (array: any[], start = 0, deleteCount = 0, ...items: any) => {
   /**
    * array =
    *      [0, start - 1]

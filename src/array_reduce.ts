@@ -1,4 +1,4 @@
-export const arrayReduce = (array, callback, initialValue = array[0]) => {
+export const arrayReduce = (array: any[], callback: any, initialValue: any = array[0]) => {
   for (let key in array) {
     initialValue = callback(initialValue, array[key], key, array);
   }

@@ -4,8 +4,8 @@
  * @param {*} object
  * @return {Boolean}
  */
-export const is_number = (v) =>
-  Object.prototype.toString.call(v) === "[object Number]" &&
-  Number.isFinite(v) &&
-  !Number.isNaN(v) &&
-  typeof v === "number";
+export const is_number = (object: any) =>
+  Object.prototype.toString.call(object) === "[object Number]" &&
+  Number.isFinite(object) &&
+  !Number.isNaN(object) &&
+  typeof object === "number";

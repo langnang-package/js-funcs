@@ -4,5 +4,5 @@
  * @param {*} object
  * @return {Boolean}
  */
-export const is_null = (object) =>
+export const is_null = (object: any) =>
   Object.prototype.toString.call(object) === "[object Null]";

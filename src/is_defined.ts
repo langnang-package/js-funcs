@@ -1,1 +1,1 @@
-export const is_defined = (v) => v !== undefined && v !== null;
+export const is_defined = (object: any) => object !== undefined && object !== null;

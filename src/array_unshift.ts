@@ -1,4 +1,4 @@
-export const arrayUnshift = (array, ...values) => {
+export const array_unshift = (array: any[], ...values: any) => {
   let _arr = [];
   for (let i = 0; i <= values.length + array.length - 1; i++) {
     if (i >= values.length) {

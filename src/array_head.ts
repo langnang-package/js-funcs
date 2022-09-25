@@ -8,9 +8,9 @@ export const array_head = (array: any[], n = 1, mode = "prototype") => {
   if (n == 1) return array[0];
 
   let _map = new Map();
-  _map.set("prototype", (array, n) => array.slice(0, n));
-  _map.set("_prototype", (array, n) => array_slice(array, 0, n));
-  _map.set("for", (array, n) => {
+  _map.set("prototype", (array: any[], n = 1) => array.slice(0, n));
+  _map.set("_prototype", (array: any[], n = 1) => array_slice(array, 0, n));
+  _map.set("for", (array: any[], n = 1) => {
     let _head = [];
     for (let i = 0; i <= n - 1; i++) {
       _head[i] = array[i];

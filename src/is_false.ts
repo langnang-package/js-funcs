@@ -1,2 +1,2 @@
 // 检测false
-export const is_false = (boolean) => boolean === false;
+export const is_false = (boolean: any) => boolean === false;

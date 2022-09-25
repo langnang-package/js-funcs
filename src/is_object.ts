@@ -5,5 +5,5 @@
  * @return {Boolean}
  */
 
-export const is_object = (object) =>
+export const is_object = (object: any) =>
   Object.prototype.toString.call(object) === "[object Object]";

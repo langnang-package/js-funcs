@@ -4,7 +4,7 @@
  */
 
 import { object_type } from "./object_type";
-export const is_dom = (object) =>
+export const is_dom = (object: any) =>
   object_type(HTMLElement) === "object"
     ? object instanceof HTMLElement
     : object &&

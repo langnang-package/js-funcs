@@ -1,4 +1,4 @@
-export const array_slice = (array, begin = 0, end = array.length) => {
+export const array_slice = (array: any[], begin: number = 0, end: number = array.length) => {
   // 如果提取起始处索引为负数，则表示从原数组中倒数第几个元素开始提起
   if (begin < 0) {
     begin = array.length + begin;

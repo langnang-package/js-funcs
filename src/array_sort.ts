@@ -1,4 +1,4 @@
-export const array_sort = (array, compareFunction = (a, b) => a - b) => {
+export const array_sort = (array: any[], compareFunction = (a: any, b: any) => a - b) => {
   // in-place 原地算法
   let index = 0;
   while (index < array.length) {

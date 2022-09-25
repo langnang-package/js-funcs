@@ -4,8 +4,8 @@
  * @param {number} originalB
  * @return {number}
  */
-export const euclideanAlgorithm = (originalA, originalB) => {
+export const euclidean = (originalA: number, originalB: number): number => {
   const a = Math.abs(originalA);
   const b = Math.abs(originalB);
-  return (b === 0) ? a : euclideanAlgorithm(b, a % b);
+  return (b === 0) ? a : euclidean(b, a % b);
 }
