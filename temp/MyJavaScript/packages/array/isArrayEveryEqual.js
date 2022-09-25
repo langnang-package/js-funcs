@@ -1,0 +1,1 @@
+export const isEveryEqual = array => array.every(val => val === arr[0])
